@@ -15,12 +15,21 @@ h1{
   font-family: 'Ubuntu', sans-serif;
 }
 .container-fluid{
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 .title-image{
   width:50%;
-  /* transform: rotate(25deg); */
+  transform: rotate(25deg);
+  position: absolute;
   /* transform: rotate(25deg) translateX(300px); */
+}
+@media (max-width : 1028px) {
+  #title{
+    text-align: center;
+  }
+  .title-image{
+      transform: rotate(0deg);
+  }
 }
 /* Navigation Bar */
 .navbar{
@@ -54,6 +63,9 @@ h1{
 #features{
   text-align: center;
   padding: 5%;
+  position: relative;
+  background-color: #fff;
+  z-index: 1;
 }
 h3{
   font-family: 'Montserrat';
@@ -68,8 +80,8 @@ p{
 }
 /* Testimonial Section */
 #testimonials{
-  text-align: center;
   padding: 7%;
+  text-align: center;
   background-color: #ffab73;
   color: #fff;
 }
@@ -78,14 +90,31 @@ h2{
   font-size: 3rem;
   line-height: 1.5;
 }
-.test-1{
+.testimonial-image{
   border-radius: 50%;
-  width: 10%;
+  width: 5%;
   margin: 10px;
+}
+.carousal-item{
+    padding: 7%;
+}
+.testimonial-text{
+  padding: 0 10% ;
 }
 /* Press */
 #press{
   background-color: #ffab73;
   text-align: center;
   padding: 2%;
+}
+.press-logo{
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+/* Pricing */
+#pricing{
+  padding: 5% 10%;
+}
+.column-pricing{
+  padding: 3% 2%;
 }
