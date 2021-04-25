@@ -1,1 +1,1 @@
-Static Website similar to TinDog Project.
+Static website similar to TinDog Project.
