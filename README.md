@@ -1,1 +1,1 @@
-TinDog Starting Files
+Static Website similar to TinDog Project.
